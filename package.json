@@ -1,0 +1,27 @@
+{
+  "name": "yoga-practice-site",
+  "version": "1.0.0",
+  "description": "A practice site",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "dev": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-stehno/yoga-practice-site.git"
+  },
+  "keywords": [],
+  "author": "Andrew Stehno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-stehno/yoga-practice-site/issues"
+  },
+  "homepage": "https://github.com/andrew-stehno/yoga-practice-site#readme"
+}
