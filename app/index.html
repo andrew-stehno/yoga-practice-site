@@ -8,10 +8,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Your yoga practice</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -32,12 +31,26 @@
     </header>
 
     <div class="large-hero">
-        <div class="large-hero__image"></div>
+        <div class="large-hero__image">
+            <picture>
+                <source srcset="assets/images/hero-large.jpg 1920w, assets/images/hero-large-hi-dpi.jpg 3840w"
+                    media="(min-width: 1380px)">
+                <source srcset="assets/images/hero-medium.jpg 1380w, assets/images/hero-medium-hi-dpi.jpg 2760w"
+                    media="(min-width: 990px)">
+                <source srcset="assets/images/hero-small.jpg 990w, assets/images/hero-small-hi-dpi.jpg 1980w"
+                    media="(min-width: 640px)">
+                <img srcset="assets/images/hero-smaller.jpg 640w, assets/images/hero-smaller-hi-dpi 1280w"
+                    alt="yogi in sunset">
+            </picture>
+        </div>
         <h1 class="large-hero__title">Your Yoga Journey</h1>
     </div>
 
     <div id="about" class="about-site">
         <h2 class="about-site__title">About Us</h2>
+        <img srcset="assets/images/about-image-smaller.jpg 250w, assets/images/about-image-smaller-hi-dpi.jpg 500w, assets/images/about-image-small.jpg 350w, assets/images/about-small-hi-dpi.jpg 700 w,
+        assets/images/about-image-medium.jpg 400w, assets/images/about-image-medium-hi-dpi.jpg 800w, assets/images/about-image-large.jpg 500w, assets/images/about-image-large-hi-dpi.jpg 1000w"
+            alt="stick figure on a yoga mat">
         <div class="about-site__statement">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque deleniti saepe amet corporis.
                 Ipsum numquam harum aperiam autem quasi id est voluptate tempora, ullam dignissimos nam
@@ -50,8 +63,10 @@
 
     <div id="testimonials">
         <div class="testimonial">
+            <h2 class="testimonial__title">Testimonials</h2>
             <div class="testimonial__image">
-                <img>
+                <img srcset="/assets/images/testimonial-one-500w.jpg 500w, /assets/images/testimonial-one-1000w.jpg 1000w"
+                    alt="image of person">
             </div>
             <h2 class="testimonial__name">Karen</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non recusandae
@@ -65,7 +80,8 @@
 
         <div class="testimonial">
             <div class="testimonial__image">
-                <img>
+                <img srcset="/assets/images/testimonial-two-500w.jpg 500w, /assets/images/testimonial-two-1000w.jpg 1000w"
+                    alt="image of person">
             </div>
             <h2 class="testimonial__name">John</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non recusandae
@@ -79,7 +95,8 @@
 
         <div class="testimonial">
             <div class="testimonial__image">
-                <img>
+                <img srcset="/assets/images/testimonial-three-500w.jpg 500w, /assets/images/testimonial-three-1000w.jpg 1000w"
+                    alt="image of person">
             </div>
             <h2 class="testimonial__name">Nancy</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non recusandae
