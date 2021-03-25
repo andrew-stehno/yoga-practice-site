@@ -1,9 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'georgia', sans-serif;
     color: $mainOrange;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
