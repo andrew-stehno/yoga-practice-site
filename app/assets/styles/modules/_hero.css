@@ -1,15 +1,18 @@
 .large-hero {
-    position: relative;
+  position: relative;
+  color: whitesmoke;
 
-    &__title {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        text-align: center;
-        width: 100%;
-        color: whitesmoke;
-        font-size: 4.5rem;
+  &__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+
+    @mixin atSmall {
+      font-size: 4.5rem;
     }
+  }
 }
-

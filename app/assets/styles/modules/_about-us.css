@@ -1,5 +1,12 @@
 .about-site {
+
     &__title {
         text-align: center;
     }
+
+    &__statement {
+        margin-right: 1.2rem;
+        margin-left: 1.2rem;
+    }
+
 }
