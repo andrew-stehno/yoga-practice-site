@@ -49,13 +49,13 @@
     <div id="about" class="about-site wrapper">
         <h2 class="about-site__title">About Us</h2>
         <div class="about-site__container">
-            <img src="assets/images/about-image-smaller.jpg"alt="stick figure on a yoga mat">
-
-            <!-- 250w, assets/images/about-image-smaller-hi-dpi.jpg 500w, assets/images/about-image-small.jpg 350w, assets/images/about-small-hi-dpi.jpg 700 w,
-            assets/images/about-image-medium.jpg 400w, assets/images/about-image-medium-hi-dpi.jpg 800w, assets/images/about-image-large.jpg 500w, assets/images/about-image-large-hi-dpi.jpg 1000w" -->
-
-
-                
+            <picture>
+                <source srcset="assets/images/about-image-large.jpg 1920w, asset/images/about-image-large-hi-dpi.jpg 3840w"
+                    alt="stick figure on a yoga mat" media="(min-width: 1380)">
+                <source srcset="assets/images/about-image-medium-hi-dpi.jpg  800w"
+                    alt="stick figure on a yoga mat" media="(min-width: 600)">
+                <img srcset="assets/images/about-image-smaller.jpg" alt="stick figure on a yoga mat">
+            </picture>
             <div class="about-site__container--statement">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque deleniti saepe amet corporis.
                     Ipsum numquam harum aperiam autem quasi id est voluptate tempora, ullam dignissimos nam
