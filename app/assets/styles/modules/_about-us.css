@@ -1,24 +1,33 @@
 .about-site {
+  &__title {
+    text-align: center;
+  }
 
-    &__title {
-        text-align: center;
+  &__container {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
+    &__statement {
+      margin-right: 1.2rem;
+      margin-left: 1.2rem;
+    }
+  }
 
+  @mixin atMedium {
     &__container {
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &__statement {
-            margin-right: 1.2rem;
-            margin-left: 1.2rem;
-        }
-    }
+      display: flex;
 
-    @mixin atMedium {
-        &__container {
-            display: flex;
-        }
+      &--image {
+        flex-basis: 100%;
+      }
+
+      &--statement {
+        flex-basis: 100%;
+        font-size: 1.25rem;
+      }
     }
+  }
+
 }
