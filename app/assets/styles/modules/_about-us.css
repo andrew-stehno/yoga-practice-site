@@ -21,13 +21,30 @@
 
       &--image {
         flex-basis: 100%;
+        padding: 1rem;
       }
 
       &--statement {
         flex-basis: 100%;
+        padding: 1rem;
         font-size: 1.25rem;
       }
     }
   }
 
+  @mixin atLarge {
+    &__container {
+      align-items: center;
+
+      &--image {
+        padding: 1.25rem;
+      }
+
+      &--statement {
+        font-size: 1.375rem;
+        padding: 1.25rem;
+        transform: translateY(-2rem);
+      }
+    }
+  }
 }
