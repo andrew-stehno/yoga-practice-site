@@ -1,0 +1,26 @@
+.site-footer {
+  border-top: orchid solid 5px;
+  text-align: center;
+
+  &__msg {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+  }
+
+  p {
+      transform: translateY(-35%);
+  }
+
+  @mixin atMedium {
+    &__msg {
+      font-size: 1.1rem;
+      display: inline;
+      margin-right: 1rem;
+    }
+
+    p {
+        transform: translateY(-20%);
+    }
+  }
+}
