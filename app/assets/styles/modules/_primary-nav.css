@@ -1,18 +1,34 @@
 .primary-nav {
-
-    &--pull-right {
-        float: right;
+  &--pull-right {
+    text-align: center;
+    @mixin atMedium {
+      float: right;
     }
+  }
 
-    li {
-        list-style: none;
-        display: inline-block;
-        padding-right: 20px;
-        padding-top: 11px;
-      }
-    
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-top: 4.1rem;
+    padding-right: 1rem;
+
+    @mixin atMedium {
+      color: white;
+      padding-right: 20px;
+      padding-top: 11px;
+    }
+  }
+
+  li:last-child {
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-right: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
