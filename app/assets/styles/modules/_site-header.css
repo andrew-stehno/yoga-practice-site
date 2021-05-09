@@ -20,6 +20,18 @@
     }
   }
 
+  &__menu-content {
+    opacity: 0;
+
+    @mixin atMedium {
+      opacity: 1;
+    }
+
+    &--is-visible {
+      opacity: 1;
+    }
+  }
+
   &__menu-icon {
     width: 20px;
     height: 20px;
