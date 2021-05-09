@@ -1,7 +1,7 @@
 .site-header {
   position: absolute;
   width: 100%;
-  height: 10.3rem;
+  height: 11.5rem;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.3);
 
@@ -10,11 +10,11 @@
   }
 
   &__btn-container {
-    text-align: center;
-    padding-top: 2rem;
+    float: right;
+    padding-right: 2rem;
+    padding-top: 7.5rem;
 
     @mixin atMedium {
-      float: right;
       padding-right: 20px;
       padding-top: 11px;
     }
