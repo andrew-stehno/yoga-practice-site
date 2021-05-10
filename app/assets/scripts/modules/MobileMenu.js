@@ -2,6 +2,7 @@ class MobileMenu {
     constructor() {
         document.addEventListener("click", () => {document.querySelector(".site-header__menu-icon");
         document.querySelector(".site-header__menu-content").classList.toggle("site-header__menu-content--is-visible");
+        document.querySelector(".site-header__menu-icon").classList.toggle("site-header__menu-icon--close-x");
     })
 
         // this.menuIcon = document.querySelector(".site-header__menu-icon")
