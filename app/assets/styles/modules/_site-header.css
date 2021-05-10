@@ -1,18 +1,28 @@
 .site-header {
   position: absolute;
   width: 100%;
-  height: 11.5rem;
+  height: 7.5rem;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.3);
 
+  @mixin atSmall {
+    height: 11.5rem;
+  }
+
   @mixin atMedium {
+    position: fixed;
     height: 4.3rem;
   }
 
   &__btn-container {
     float: right;
-    padding-right: 2rem;
-    padding-top: 7.5rem;
+    padding-right: .5rem;
+    padding-top: 4.3rem;
+
+    @mixin atSmall {
+      padding-right: 2rem;
+      padding-top: 7.5rem;
+    }
 
     @mixin atMedium {
       padding-right: 20px;
@@ -87,14 +97,11 @@
     &::after {
       transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
-    
+
     .site-header__menu-icon--middle {
       opacity: 0;
       transform: scaleX(0);
     }
   }
 
-  @mixin atMedium {
-    position: fixed;
-  }
 }
